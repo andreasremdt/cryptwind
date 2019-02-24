@@ -1,0 +1,111 @@
+.main-navigation {
+  display: flex;
+  flex: 0 0 15rem;
+  flex-direction: column;
+  padding: var(--spacing-normal) 0;
+
+  background-color: var(--color-gray-dark);
+}
+
+.main-navigation > .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-navigation > .logo > .icon {
+  padding: .3rem;
+  margin-right: var(--spacing-small);
+
+  color: white;
+
+  overflow: visible;
+
+  border: 1px solid var(--color-cyan);
+  border-radius: 50%;
+}
+
+.main-navigation > .title {
+  padding: 0 var(--spacing-normal);
+  margin-bottom: var(--spacing-small);
+
+  font-size: 14px;
+  font-weight: unset;
+  text-transform: uppercase;
+}
+
+.main-navigation > .title:last-of-type {
+  margin-top: auto;
+}
+
+.main-navigation > .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: .2rem 0;
+  padding: 0 var(--spacing-normal);
+  
+  font-weight: bold;
+  
+  border-left: 3px solid transparent;
+
+  transition: color .1s linear, border-color .1s linear;
+}
+
+.main-navigation > .link > .badge {
+  padding: 0 .5rem;
+
+  font-weight: normal;
+  font-size: 12px;
+
+  background-color: var(--color-gray-medium);
+
+  border-radius: var(--spacing-small);
+
+  transition: background-color .1s linear, color .1s linear;
+}
+
+.main-navigation > .link:hover,
+.main-navigation > .link:focus {
+  color: white;
+
+  border-left-color: var(--color-cyan);
+}
+
+.main-navigation > .link:hover > .badge,
+.main-navigation > .link:focus > .badge {
+  color: var(--color-cyan);
+  background-color: white;
+}
+
+.main-navigation > .actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 95px;
+  grid-gap: var(--spacing-small);
+  padding: 0 var(--spacing-normal);
+}
+
+.main-navigation > .actions > .action {
+  background-color: transparent;
+  color: inherit;
+  
+  border: 1px dashed var(--color-gray-light);
+  border-radius: var(--spacing-small);
+
+  cursor: pointer;
+  transition: border-color .1s linear, color .1s linear;
+}
+
+.main-navigation > .actions > .action:hover,
+.main-navigation > .actions > .action:focus {
+  color: white;
+  border-color: var(--color-cyan);
+}

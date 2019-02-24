@@ -1,0 +1,86 @@
+:root {
+  --spacing-tiny: .7rem;
+  --spacing-small: 1rem;
+  --spacing-normal: 2rem;
+  --spacing-large: 4rem;
+
+  --color-gray-dark: #262936;
+  --color-gray-medium: #303443;
+  --color-gray-light: #656D8B;
+  --color-cyan: #02ADC4;
+  --color-yellow: #FFBA01;
+  --color-blue: #3E8ED7;
+  --color-red: #C27647;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Source Sans Pro Bold"),
+       local("SourceSansPro-Bold"),
+       url("../assets/source-sans-pro-bold.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Source Sans Regular Light"),
+       local("SourceSansRegular-Light"),
+       url("../assets/source-sans-pro-regular.woff2") format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 400 19px/1.6 "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: unset;
+  display: flex;
+  height: 100vh;
+
+  color: var(--color-gray-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+input, button {
+  padding: unset;
+  margin: unset;
+
+  font: inherit;
+  
+  border: none;
+
+  color: inherit;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.-yellow { color: var(--color-yellow); }
+.-blue { color: var(--color-blue); }
+.-cyan { color: var(--color-cyan); }
+.-red { color: var(--color-red); }

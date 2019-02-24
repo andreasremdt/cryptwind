@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.search-form > .icon {
+  margin-right: var(--spacing-small);
+
+  transition: color .1s linear;
+}
+
+.search-form > .input {
+  width: 100%;
+  
+  background-color: transparent;
+  color: white;
+  
+  outline: none;
+}
+
+.search-form > .input:focus ~ .icon {
+  color: var(--color-cyan);
+}
+
+.search-form > .input::placeholder,
+.search-form > .input::-webkit-placeholder {
+  opacity: 1;
+  color: var(--color-gray-light);
+}

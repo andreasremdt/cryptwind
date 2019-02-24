@@ -1,0 +1,23 @@
+.main-content {
+  flex-grow: 1;
+  padding: var(--spacing-normal);
+
+  background: var(--color-gray-medium) no-repeat bottom center/contain;
+  background-image: url("../assets/tree-line-6.png"), url("../assets/tree-line-13.png");
+
+  overflow-y: auto;
+}
+
+.main-content > .pretitle {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-content > .title {
+  margin: 0 0 var(--spacing-normal) 0;
+  
+  line-height: 1;
+  font-size: 33px;
+
+  color: white;
+}
