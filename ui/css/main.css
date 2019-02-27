@@ -67,6 +67,8 @@ input, button {
   border: none;
 
   color: inherit;
+
+  outline: none;
 }
 
 input[type="search"] {
@@ -84,3 +86,8 @@ input[type="search"]::-webkit-search-cancel-button {
 .-blue { color: var(--color-blue); }
 .-cyan { color: var(--color-cyan); }
 .-red { color: var(--color-red); }
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+}

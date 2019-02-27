@@ -4,20 +4,58 @@
 
   background: var(--color-gray-medium) no-repeat bottom center/contain;
   background-image: url("../assets/tree-line-6.png"), url("../assets/tree-line-13.png");
-
-  overflow-y: auto;
 }
 
-.main-content > .pretitle {
-  font-size: 14px;
-  text-transform: uppercase;
+.main-content > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--spacing-normal) 0;
 }
 
-.main-content > .title {
-  margin: 0 0 var(--spacing-normal) 0;
-  
+.main-content > .header > .title {
+  margin: 0;
+  position: relative;
+
   line-height: 1;
   font-size: 33px;
 
   color: white;
+}
+
+.main-content > .header > .title::before {
+  position: absolute;
+  bottom: calc(100% + 5px);
+  
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  
+  color: var(--color-gray-light);
+  
+  content: attr(data-type);
+}
+
+.main-content > .header > .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+
+  background-color: var(--color-cyan);
+  color: white;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: background-color .1s linear, color .1s linear, transform .2s ease-out;
+}
+
+.main-content > .header > .button:hover,
+.main-content > .header > .button:focus {
+  background-color: white;
+  color: var(--color-blue);
+
+  transform: scale(1.2) rotate(90deg);
 }
