@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Andreas Remdt">
+
+    <title>Password Manager</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="main-content">
+      <h1>Password Manager</h1>
+
+      <header class="control-panel">
+        <button type="button" data-js="new-password">New password</button>
+        <input type="search" placeholder="Search..." data-js="search">
+      </div>
+
+      <!-- <ul class="password-list" data-js="password-list"></ul> -->
+      <password-list></password-list>
+      <password-form></password-form>
+    </main>
+
+    <div class="blocked-overlay">
+
+    </div>
+
+    <script type="module" src="js/index.js" defer></script>
+  </body>
+</html>
