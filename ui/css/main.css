@@ -4,8 +4,8 @@
   --spacing-normal: 2rem;
   --spacing-large: 4rem;
 
-  --color-gray-dark: #262936;
-  --color-gray-medium: #303443;
+  --color-gray-dark: rgb(38, 41, 54);
+  --color-gray-medium: rgb(48, 53, 68);
   --color-gray-light: #656D8B;
   --color-cyan: #02ADC4;
   --color-yellow: #FFBA01;
@@ -42,16 +42,28 @@ html {
 }
 
 body {
-  margin: unset;
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "navigation-header list-header password-header"
+    "navigation-content list-content password-details";
+  grid-template-columns: 15rem minmax(23rem, 1fr) 1fr;
+  grid-template-rows: 6rem 1fr;
+  grid-column-gap: var(--spacing-normal);
   height: 100vh;
+  margin: unset;
 
+  background: var(--color-gray-medium) no-repeat bottom center/contain;
+  background-image: url("../assets/tree-line-6.png"), url("../assets/tree-line-13.png");
   color: var(--color-gray-light);
+
+  overflow: hidden;
+
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  outline:none;
 }
 
 img, svg {
@@ -67,6 +79,7 @@ input, button {
   border: none;
 
   color: inherit;
+  background-color: transparent;
 
   outline: none;
 }

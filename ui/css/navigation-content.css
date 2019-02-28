@@ -1,51 +1,28 @@
-.main-navigation {
+.navigation-content {
+  grid-area: navigation-content;
+
   display: flex;
-  flex: 0 0 15rem;
   flex-direction: column;
-  padding: var(--spacing-normal) 0;
+  padding-bottom: var(--spacing-normal);
 
   background-color: var(--color-gray-dark);
 }
 
-.main-navigation > .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: white;
-
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.main-navigation > .logo > .icon {
-  padding: .3rem;
-  margin-right: var(--spacing-small);
-
-  color: white;
-
-  overflow: visible;
-
-  border: 1px solid var(--color-cyan);
-  border-radius: 50%;
-}
-
-.main-navigation > .title {
+.navigation-content > .title {
   padding: 0 var(--spacing-normal);
-  margin-bottom: var(--spacing-small);
+  margin-top: 0;
+  margin-bottom: var(--spacing-tiny);
 
   font-size: 14px;
   font-weight: unset;
   text-transform: uppercase;
 }
 
-.main-navigation > .title:last-of-type {
+.navigation-content > .title:last-of-type {
   margin-top: auto;
 }
 
-.main-navigation > .link {
+.navigation-content > .link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +36,7 @@
   transition: color .1s linear, border-color .1s linear;
 }
 
-.main-navigation > .link > .badge {
+.navigation-content > .link > .badge {
   padding: 0 .5rem;
 
   font-weight: normal;
@@ -72,20 +49,20 @@
   transition: background-color .1s linear, color .1s linear;
 }
 
-.main-navigation > .link:hover,
-.main-navigation > .link:focus {
+.navigation-content > .link:hover,
+.navigation-content > .link:focus {
   color: white;
 
   border-left-color: var(--color-cyan);
 }
 
-.main-navigation > .link:hover > .badge,
-.main-navigation > .link:focus > .badge {
+.navigation-content > .link:hover > .badge,
+.navigation-content > .link:focus > .badge {
   color: var(--color-cyan);
   background-color: white;
 }
 
-.main-navigation > .actions {
+.navigation-content > .actions {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 95px;
@@ -93,19 +70,19 @@
   padding: 0 var(--spacing-normal);
 }
 
-.main-navigation > .actions > .action {
+.navigation-content > .actions > .action {
   background-color: transparent;
   color: inherit;
   
   border: 1px dashed var(--color-gray-light);
-  border-radius: var(--spacing-small);
+  border-radius: var(--spacing-tiny);
 
   cursor: pointer;
   transition: border-color .1s linear, color .1s linear;
 }
 
-.main-navigation > .actions > .action:hover,
-.main-navigation > .actions > .action:focus {
+.navigation-content > .actions > .action:hover,
+.navigation-content > .actions > .action:focus {
   color: white;
   border-color: var(--color-cyan);
 }

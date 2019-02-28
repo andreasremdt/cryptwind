@@ -3,22 +3,19 @@
   flex-direction: row-reverse;
 }
 
-.search-form > .icon {
+.search-form > .input {
+  flex: 1;
+  
+  color: white;
+}
+
+.search-form > .submit {
   margin-right: var(--spacing-small);
 
   transition: color .1s linear;
 }
 
-.search-form > .input {
-  width: 100%;
-  
-  background-color: transparent;
-  color: white;
-  
-  outline: none;
-}
-
-.search-form > .input:focus ~ .icon {
+.search-form > .input:focus ~ .submit {
   color: var(--color-cyan);
 }
 

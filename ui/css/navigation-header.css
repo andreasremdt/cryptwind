@@ -1,0 +1,30 @@
+.navigation-header {
+  grid-area: navigation-header;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: var(--color-gray-dark);
+}
+
+.navigation-header > .icon {
+  margin-right: var(--spacing-tiny);
+
+  overflow: visible;
+}
+
+.navigation-header > .icon > .shield {
+  fill: var(--color-cyan);
+}
+
+.navigation-header > .icon > .checkmark {
+  fill: white;
+}

@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition: background-color .1s linear, color .1s linear, transform .2s ease-out;
+}
+
+.button.-normal {
+  width: 28px;
+  height: 28px;
+}
+
+.button.-small {
+  width: 20px;
+  height: 20px;
+}
+
+.button.-primary {
+
+  background-color: var(--color-cyan);
+  color: white;
+
+  border-radius: 50%;
+}
+
+.button.-primary:hover,
+.button.-primary:focus {
+  background-color: white;
+  color: var(--color-blue);
+
+  transform: scale(1.2) rotate(90deg);
+}
+
+.button.-secondary {
+  background-color: transparent;
+}
+
+.button.-secondary:hover,
+.button.-secondary:focus {
+  color: white;
+
+  transform: scale(1.2);
+}

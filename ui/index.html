@@ -8,16 +8,23 @@
     <title>Dashboard</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/helpers.css">
   </head>
   <body>
-    <link rel="stylesheet" href="css/main-navigation.css">
-    <nav class="main-navigation">
-      <a href="index.html" class="logo" title="Cryptwd Password Manager">
-        <svg width="30" height="30" class="icon">
-          <use href="assets/symbol-defs.svg#icon-key"></use>
-        </svg> Cryptwind
-      </a>
 
+    <link rel="stylesheet" href="css/navigation-header.css">
+    <div class="navigation-header">
+      <svg viewBox="-38 0 512 512.001" width="30" height="30" class="icon">
+        <path class="checkmark" d="M217.996 158.457c-53.793 0-97.555 43.762-97.555 97.55 0 53.794 43.762 97.555 97.555 97.555 53.79 0 97.55-43.761 97.55-97.554 0-53.79-43.76-97.551-97.55-97.551zm57.918 79.18l-69.887 69.886a14.984 14.984 0 0 1-10.625 4.403 14.96 14.96 0 0 1-10.62-4.403l-26.708-26.707c-5.867-5.863-5.867-15.375 0-21.242 5.863-5.867 15.375-5.867 21.242 0l16.086 16.086 59.27-59.265c5.863-5.868 15.375-5.868 21.242 0 5.867 5.863 5.867 15.375 0 21.242zm0 0"/>
+        <path class="shield" d="M435.488 138.918l-.015-.398a533.678 533.678 0 0 1-.461-15.91c-.418-28.231-22.86-51.583-51.094-53.16-58.867-3.286-104.406-22.481-143.316-60.407l-.332-.316c-12.692-11.637-31.836-11.637-44.532 0l-.332.316c-38.91 37.926-84.449 57.121-143.316 60.41C23.86 71.027 1.414 94.38.996 122.613a527.685 527.685 0 0 1-.46 15.907l-.024.925C-.633 199.473-2.055 274.18 22.937 341.988c13.743 37.29 34.555 69.703 61.856 96.348 31.094 30.344 71.82 54.434 121.047 71.598a37.432 37.432 0 0 0 4.96 1.351c2.391.477 4.798.715 7.204.715 2.406 0 4.816-.238 7.203-.715a37.463 37.463 0 0 0 4.98-1.36c49.168-17.195 89.852-41.296 120.918-71.636 27.29-26.652 48.102-59.074 61.856-96.371 25.086-68.012 23.668-142.86 22.527-203zM217.996 383.605c-70.36 0-127.598-57.238-127.598-127.597 0-70.36 57.239-127.598 127.598-127.598 70.356 0 127.598 57.238 127.598 127.598s-57.242 127.597-127.598 127.597zm0 0"/>
+      </svg> Cryptwind
+    </div>
+    
+
+
+    <link rel="stylesheet" href="css/navigation-content.css">
+    <nav class="navigation-content">
       <h6 class="title">Categories</h6>
       <a href="#" class="link -big">Login <span class="badge">12</span></a>
       <a href="#" class="link -big">Computer <span class="badge">3</span></a>
@@ -27,241 +34,153 @@
       <h6 class="title">Actions</h6>
       <div class="actions">
         <button type="button" class="action" title="Open settings">
-          <svg width="32" height="32" class="icon">
-            <use href="assets/symbol-defs.svg#icon-settings"></use>
+          <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
           </svg>
         </button>
         <button type="button" class="action" title="Lock app">
-          <svg width="32" height="32" class="icon">
-            <use href="assets/symbol-defs.svg#icon-lock"></use>
+          <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
           </svg>
         </button>
       </div>
     </nav>
+    
+    
 
-    <link rel="stylesheet" href="css/main-content.css">
-    <main class="main-content">
-      <header class="header">
-        <h1 class="title" data-type="folder">Login</h1>
+    <link rel="stylesheet" href="css/list-header.css">
+    <header class="list-header">
+      <h1 class="title" data-type="12 items in">Login</h1>
 
-        <button type="button" class="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-        </button>
+      <button type="button" class="button -secondary -normal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+          <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+        </svg>
+      </button>
+
+      <button type="button" class="button -primary -normal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+      </button>
+    </header>
+
+
+
+    <link rel="stylesheet" href="css/list-content.css">
+    <main class="list-content">
+      <header class="header _frost">
+
+        <link rel="stylesheet" href="css/search-form.css">
+        <form class="search-form">
+          <input type="search" class="input" placeholder="Filter list...">
+          <button type="submit" class="submit">
+            <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </form>
       </header>
 
-      <div class="grid">
-
-        <link rel="stylesheet" href="css/content-wrapper.css">
-        <section class="content-wrapper">
-          <header class="header">
-            <link rel="stylesheet" href="css/search-form.css">
-            <div class="search-form">
-              <input type="search" class="input" placeholder="Filter list...">
-              <svg width="32" height="32" class="icon">
-                <use href="assets/symbol-defs.svg#icon-search"></use>
-              </svg>
-            </div>
-          </header>
-  
-          <link rel="stylesheet" href="css/password-list.css">
-          <ol class="password-list">
-            <li class="item">
-              <svg width="30" height="30" class="icon">
-                <use href="assets/symbol-defs.svg#icon-internet"></use>
-              </svg>
-              <div>
-                <h3 class="title">Amazon</h3>
-                <p class="username">andreas.remdt@gmail.com</p>
-              </div>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-edit"></use>
-                </svg>
-              </button>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-copy"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="item">
-                <svg width="30" height="30" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-internet"></use>
-                </svg>
-                <div>
-                  <h3 class="title">Amazon</h3>
-                  <p class="username">andreas.remdt@gmail.com</p>
-                </div>
-                <button type="button" class="action">
-                  <svg width="20" height="20" class="icon">
-                    <use href="assets/symbol-defs.svg#icon-edit"></use>
-                  </svg>
-                </button>
-                <button type="button" class="action">
-                  <svg width="20" height="20" class="icon">
-                    <use href="assets/symbol-defs.svg#icon-copy"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="item">
-                  <svg width="30" height="30" class="icon">
-                    <use href="assets/symbol-defs.svg#icon-internet"></use>
-                  </svg>
-                  <div>
-                    <h3 class="title">Amazon</h3>
-                    <p class="username">andreas.remdt@gmail.com</p>
-                  </div>
-                  <button type="button" class="action">
-                    <svg width="20" height="20" class="icon">
-                      <use href="assets/symbol-defs.svg#icon-edit"></use>
-                    </svg>
-                  </button>
-                  <button type="button" class="action">
-                    <svg width="20" height="20" class="icon">
-                      <use href="assets/symbol-defs.svg#icon-copy"></use>
-                    </svg>
-                  </button>
-                </li>
-                <li class="item">
-                    <svg width="30" height="30" class="icon">
-                      <use href="assets/symbol-defs.svg#icon-internet"></use>
-                    </svg>
-                    <div>
-                      <h3 class="title">Amazon</h3>
-                      <p class="username">andreas.remdt@gmail.com</p>
-                    </div>
-                    <button type="button" class="action">
-                      <svg width="20" height="20" class="icon">
-                        <use href="assets/symbol-defs.svg#icon-edit"></use>
-                      </svg>
-                    </button>
-                    <button type="button" class="action">
-                      <svg width="20" height="20" class="icon">
-                        <use href="assets/symbol-defs.svg#icon-copy"></use>
-                      </svg>
-                    </button>
-                  </li>
-                  <li class="item">
-                      <svg width="30" height="30" class="icon">
-                        <use href="assets/symbol-defs.svg#icon-internet"></use>
-                      </svg>
-                      <div>
-                        <h3 class="title">Amazon</h3>
-                        <p class="username">andreas.remdt@gmail.com</p>
-                      </div>
-                      <button type="button" class="action">
-                        <svg width="20" height="20" class="icon">
-                          <use href="assets/symbol-defs.svg#icon-edit"></use>
-                        </svg>
-                      </button>
-                      <button type="button" class="action">
-                        <svg width="20" height="20" class="icon">
-                          <use href="assets/symbol-defs.svg#icon-copy"></use>
-                        </svg>
-                      </button>
-                    </li>
-            <li class="item">
-              <svg width="30" height="30" class="icon">
-                <use href="assets/symbol-defs.svg#icon-internet"></use>
-              </svg>
-              <div>
-                <h3 class="title">Google</h3>
-                <p class="username">andreas.remdt@gmail.com</p>
-              </div>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-edit"></use>
-                </svg>
-              </button>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-copy"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="item">
-              <svg width="30" height="30" class="icon">
-                <use href="assets/symbol-defs.svg#icon-star"></use>
-              </svg>
-              <div>
-                <h3 class="title">Spotify</h3>
-                <p class="username">andreas.remdt@gmail.com</p>
-              </div>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-edit"></use>
-                </svg>
-              </button>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-copy"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="item">
-              <svg width="30" height="30" class="icon">
-                <use href="assets/symbol-defs.svg#icon-database"></use>
-              </svg>
-              <div>
-                <h3 class="title">Lions-Club Schliengen Database</h3>
-                <p class="username">db-143434-alpha</p>
-              </div>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-edit"></use>
-                </svg>
-              </button>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-copy"></use>
-                </svg>
-              </button>
-            </li>
-            <li class="item">
-              <svg width="30" height="30" class="icon">
-                <use href="assets/symbol-defs.svg#icon-wifi"></use>
-              </svg>
-              <div>
-                <h3 class="title">Wifi access</h3>
-                <p class="username">user23423423</p>
-              </div>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-edit"></use>
-                </svg>
-              </button>
-              <button type="button" class="action">
-                <svg width="20" height="20" class="icon">
-                  <use href="assets/symbol-defs.svg#icon-copy"></use>
-                </svg>
-              </button>
-            </li>
-          </ol>
-        </section>
-
-        <script>
-          document.body.onclick = function() {
-            document.getElementById('test').classList.toggle('-hidden');
-            document.getElementById('test').classList.toggle('-visible');
-          }
-        </script>
-        <section class="content-wrapper -hidden" id="test">
-          <header class="header">
-            <div class="search-form">
-              <input type="search" class="input" placeholder="Filter list...">
-              <svg width="32" height="32" class="icon">
-                <use href="assets/symbol-defs.svg#icon-search"></use>
-              </svg>
-            </div>
-          </header>
-
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem similique corporis dolorem! Error optio vero expedita eos mollitia culpa sint non, impedit iure molestiae, blanditiis consectetur sequi corporis cumque explicabo!</p>
-        </section>
-
-      </div>
+      <link rel="stylesheet" href="css/password-list.css">
+      <ol class="password-list">
+        <li class="item">
+          <svg width="30" height="30" class="icon">
+            <use href="assets/symbol-defs.svg#icon-internet"></use>
+          </svg>
+          <div>
+            <h3 class="title">Amazon</h3>
+            <p class="username">andreas.remdt@gmail.com</p>
+          </div>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+            </svg>
+          </button>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="item">
+          <svg width="30" height="30" class="icon">
+            <use href="assets/symbol-defs.svg#icon-internet"></use>
+          </svg>
+          <div>
+            <h3 class="title">Amazon</h3>
+            <p class="username">andreas.remdt@gmail.com</p>
+          </div>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+            </svg>
+          </button>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="item">
+          <svg width="30" height="30" class="icon">
+            <use href="assets/symbol-defs.svg#icon-internet"></use>
+          </svg>
+          <div>
+            <h3 class="title">Amazon</h3>
+            <p class="username">andreas.remdt@gmail.com</p>
+          </div>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+            </svg>
+          </button>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </li>
+        <li class="item">
+          <svg width="30" height="30" class="icon">
+            <use href="assets/symbol-defs.svg#icon-internet"></use>
+          </svg>
+          <div>
+            <h3 class="title">Amazon</h3>
+            <p class="username">andreas.remdt@gmail.com</p>
+          </div>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+            </svg>
+          </button>
+          <button type="button" class="button -secondary">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </li>
+      </ol>
     </main>
+
+
+
+    <link rel="stylesheet" href="css/password-details.css">
+    <section class="password-details _frost">
+      <p>asdasdsad</p>
+    </section>
+<!-- 
+    <div class="login-screen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="square" stroke-linejoin="arcs"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <input type="text" placeholder="Master password..."> -->
+    </div>
   </body>
 </html>
