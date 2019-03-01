@@ -4,13 +4,13 @@
   --spacing-normal: 2rem;
   --spacing-large: 4rem;
 
-  --color-gray-dark: rgb(38, 41, 54);
-  --color-gray-medium: rgb(48, 53, 68);
-  --color-gray-light: #656D8B;
-  --color-cyan: #02ADC4;
-  --color-yellow: #FFBA01;
-  --color-blue: #3E8ED7;
-  --color-red: #C27647;
+  --color-gray-dark:    rgb(38, 41, 54);
+  --color-gray-medium:  rgb(48, 53, 68);
+  --color-gray-light:   rgb(101, 109, 139);
+  --color-cyan:         rgb(2, 173, 196);
+  --color-yellow:       rgb(255, 186, 1);
+  --color-blue:         rgb(62, 142, 215);
+  --color-red:          rgb(194, 118, 71);
 }
 
 @font-face {
@@ -57,7 +57,9 @@ body {
   color: var(--color-gray-light);
 
   overflow: hidden;
-
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smooting: grayscale;
 }
 
 a {
@@ -93,6 +95,12 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
+}
+
+input::placeholder,
+input::-webkit-placeholder {
+  opacity: 1;
+  color: var(--color-gray-light);
 }
 
 .-yellow { color: var(--color-yellow); }

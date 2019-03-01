@@ -3,7 +3,7 @@
   
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: var(--spacing-small);
 }
 
 .list-header > .title {

@@ -18,9 +18,3 @@
 .search-form > .input:focus ~ .submit {
   color: var(--color-cyan);
 }
-
-.search-form > .input::placeholder,
-.search-form > .input::-webkit-placeholder {
-  opacity: 1;
-  color: var(--color-gray-light);
-}
