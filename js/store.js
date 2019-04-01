@@ -33,6 +33,12 @@ class Store {
     // TODO
   }
 
+  get(accessor, value) {
+    var [obj, prop] = accessor.split(/\./);
+
+    return this.__data__[obj].filter(obj => obj[prop] === value)[0];
+  }
+
   get passwords() {
     return this.__data__.passwords.filter((password) => {
       var query = this.__data__.query.toLowerCase();

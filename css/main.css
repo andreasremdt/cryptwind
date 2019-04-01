@@ -70,6 +70,7 @@ a {
 
 img, svg {
   vertical-align: middle;
+  pointer-events: none;
 }
 
 input, button {
