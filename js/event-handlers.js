@@ -11,11 +11,7 @@ export default {
     });
   },
   
-  duplicate: function() {
-
-  },
-
-  rename: function() {
-
+  filter: function(evt) {
+    store.category = evt.target.dataset.category;
   }
 };

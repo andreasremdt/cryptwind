@@ -22,7 +22,7 @@
   margin-top: auto;
 }
 
-.navigation-content > .link {
+.navigation-content .link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +36,7 @@
   transition: color .1s linear, border-color .1s linear;
 }
 
-.navigation-content > .link > .badge {
+.navigation-content .link > .badge {
   padding: 0 .5rem;
 
   font-weight: normal;
@@ -49,15 +49,15 @@
   transition: background-color .1s linear, color .1s linear;
 }
 
-.navigation-content > .link:hover,
-.navigation-content > .link:focus {
+.navigation-content .link:hover,
+.navigation-content .link:focus {
   color: white;
 
   border-left-color: var(--color-cyan);
 }
 
-.navigation-content > .link:hover > .badge,
-.navigation-content > .link:focus > .badge {
+.navigation-content .link:hover > .badge,
+.navigation-content .link:focus > .badge {
   color: var(--color-cyan);
   background-color: white;
 }

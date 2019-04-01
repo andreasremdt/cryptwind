@@ -17,7 +17,8 @@ class Store {
     this.__actions__ = {};
     this.__data__ = new Proxy({
       passwords: new Proxy(PASSWORD_DATA, handler),
-      query: ""
+      query: "",
+      category: ""
     }, handler);
   }
 
@@ -40,7 +41,7 @@ class Store {
   }
 
   get passwords() {
-    return this.__data__.passwords.filter((password) => {
+    var temp = this.__data__.passwords.filter((password) => {
       var query = this.__data__.query.toLowerCase();
 
       if (password.title.toLowerCase().includes(query)) {
@@ -55,10 +56,20 @@ class Store {
         return true;
       }
     });
+
+    if (this.__data__.category !== "") {
+      return temp.filter(i => i.category === this.__data__.category);
+    }
+
+    return temp;
   }
 
   set query(value) {
     this.__data__.query = value;
+  }
+
+  set category(category) {
+    this.__data__.category = category;
   }
 }
 
